@@ -1,7 +1,15 @@
 package main
 
-import covergencia "github.com/daniielsantos/channels/convergencia"
+import (
+	"sync"
+
+	//covergencia "github.com/daniielsantos/channels/convergencia"
+	divergencia "github.com/daniielsantos/channels/divergencia"
+)
+
+var wg sync.WaitGroup
 
 func main() {
-	covergencia.GetConvergencia()
+	//covergencia.GetConvergencia()
+	divergencia.GetDivergencia()
 }
